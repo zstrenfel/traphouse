@@ -19,6 +19,7 @@
 #  water                  :integer
 #  baking_soda            :integer
 #  money                  :integer
+#  name                   :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

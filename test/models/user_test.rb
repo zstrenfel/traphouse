@@ -19,6 +19,7 @@
 #  water                  :integer
 #  baking_soda            :integer
 #  money                  :integer
+#  name                   :string
 #
 
 require 'test_helper'
