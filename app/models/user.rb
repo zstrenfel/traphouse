@@ -20,6 +20,7 @@
 #  baking_soda            :integer
 #  money                  :integer
 #  name                   :string
+#  profile_picture_url    :string
 #
 
 class User < ActiveRecord::Base
