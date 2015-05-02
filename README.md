@@ -1,5 +1,9 @@
 Title: Traphouse
+
+
 Team Members: Joshua Howland, Zach Strenfel
+
+
 Demo Link: 
 
 
