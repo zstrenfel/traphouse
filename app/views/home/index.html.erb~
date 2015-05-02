@@ -8,9 +8,17 @@
 	<% @users.each do |user| %>
         <br>
         user:
-		<%= user.email %>
+		<%= link_to user.email, user %>
+        <%= user.questions %>
 	<% end %>
 
 </div>
 
+
+<% if current_user %>
+    <%= simple_form_for @question do |f| %>
+      <%= f.input :text %>
+      <%= f.button :submit %>
+    <% end %>
+<% end %>
 

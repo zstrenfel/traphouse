@@ -9,8 +9,16 @@
         <br>
         user:
 		<%= link_to user.email, user %>
+        <%= user.questions %>
 	<% end %>
 
 </div>
 
+
+<% if current_user %>
+    <%= simple_form_for @user.question do |f| %>
+      <%= f.input :text %>
+      <%= f.button :submit %>
+    <% end %>
+<% end %>
 

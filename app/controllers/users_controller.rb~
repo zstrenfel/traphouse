@@ -12,5 +12,4 @@ class UsersController < ApplicationController
 
   def question
     @questions = current_user.questions
-  end
 end

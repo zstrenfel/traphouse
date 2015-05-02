@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   get "/", to: 'home#index', as: 'home'
   resources :users, only: [:index, :show] do
     resources :questions, only: [:new, :create, :edit, :update], shallow: true
+ # match 'users/:id' => 'users#show', via: :get
   end
+
+
 
 
   #get 'home/index'
