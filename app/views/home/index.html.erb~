@@ -1,0 +1,16 @@
+<div class="splash">
+	<h1>Welcome to the <br>
+	<strong> Trap House </strong></h1>
+
+	<p>A website were you trap and make money (and shit) with your friends</p>
+
+<h3>Current Trap Stars</h3>
+	<% @users.each do |user| %>
+        <br>
+        user:
+		<%= user.name %>
+	<% end %>
+
+</div>
+
+
