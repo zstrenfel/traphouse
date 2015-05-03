@@ -10,3 +10,8 @@ user1 = User.create([{email: 'test1@example.com', password: 'asdfasdt433', name:
 user1 = User.create([{email: 'test2@example.com', password: 'asdfasdt433', name: 'user2', coke: 1, baking_soda: 2, water: 3, money: 4}])
 user1 = User.create([{email: 'test3@example.com', password: 'asdfasdt433', name: 'user3', coke: 1, baking_soda: 2, water: 3, money: 4}])
 user1 = User.create([{email: 'test4@example.com', password: 'asdfasdt433', name: 'user4', coke: 1, baking_soda: 2, water: 3, money: 4}])
+
+Question.create! text: "What is life?", user: User.find(1)
+Question.create! text: "When will i die?", user: User.find(2)
+Question.create! text: "When will i die?", user: User.find(3)
+Question.create! text: "When will i die?", user: User.find(4)

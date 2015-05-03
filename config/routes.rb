@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   get "/", to: 'home#index', as: 'home'
+  # get "questions/new", to: 'questions#new', as 'newaQuestion'
   resources :users, only: [:index, :show] do
-    resources :questions, only: [:new, :create, :edit, :update], shallow: true
+    resources :questions, only: [:new, :create, :edit, :update]
   end
 
 
